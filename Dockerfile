@@ -1,2 +1,3 @@
 FROM alpine:3.5
-RUN hello.sh
+COPY hello.sh /usr/src/app
+RUN /usr/src/app/hello.sh
